@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(61, 54, 48);
+}
+.navbar{
+    color: aliceblue;
+    background-color: black;
+    margin-bottom: 5px;
+    position: sticky;
+    top:0;
+}
+.nav{
+    height:50px;
+    width: 100%;
+    border: 1px orangered solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+}
+#brand{
+    margin-left: 10px;
+}
+.niv{
+    background-color: black;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.land{
+    height: 50vw;
+    width: 98vw;
+    background-color: black;
+    border: 1px orangered solid;
+}
