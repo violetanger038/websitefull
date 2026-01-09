@@ -1,0 +1,300 @@
+body{
+    background-color: rgb(61, 54, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    color: aliceblue;
+    background-color: black;
+    margin-bottom: 5px;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    width: 100%;
+}
+.nav{
+    height:50px;
+    width: 100%;
+    border: 1px orangered solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    margin-right: 5px;
+}
+#brand{
+    margin-left: 10px;
+    font-family: "Orbitron",sans-serif;
+}
+.niv{
+    background-color: black;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.land{
+    height: 70vw;
+    width: 98vw;
+    background-color: black;
+    border: 1px orangered solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+}
+.footer{
+    background-color: black;
+    color: orangered;
+    height: 25px;
+    width: 100%;
+}
+.master{
+    height: 500vh;
+    width: 98vw;
+    background-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: orange;
+    color: orange;
+    display: grid;
+    justify-content: center;
+    font-size: 3vw;
+    font-family: "Orbitron",sans-serif;
+    
+   
+}
+.master2{
+    height: 500vh;
+    width: 98vw;
+    background-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(21, 255, 0);
+    color:rgb(21, 255, 0);
+    display: grid;
+    justify-content: center;
+    font-size: 3vw;
+    font-family: "Orbitron",sans-serif;
+    
+   
+}
+.cimg{
+    height: 50vh;
+    width: 25vw;
+    transition: all 2s;
+    z-index: 5;
+}
+.grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto ;
+    width: 98vw;
+    height: 450vh;
+    gap: 20px;
+   
+}
+.tbox{
+    background-color: orange;
+    width: 0vw;
+    height: 0vh;
+    font-size: 0ch;
+    transition: all 2s;
+    position: relative;
+    top:-5vh;
+}
+.orgin{
+    font-family: 'Orbitron', sans-serif;
+    color: orange;
+}
+.card{
+    border: 1px orange solid;
+    height: 50vh;
+    width: 25vw;
+    transition: all 2s;
+    color: black;
+    font-family: "Orbitron",sans-serif;
+    z-index: 5;
+} 
+.card:hover{
+    width: 40vw;
+    height: 65vh;
+    animation: type 2s forwards;
+    animation-iteration-count: 1;
+
+}
+
+.card:hover .cimg{
+    width:40vw ;
+}
+.card:hover .tbox{ 
+    width: 40vw;
+    height: 15vh;
+    font-size: 2vw;
+}
+.carname{
+    position: relative;
+
+    font-size: medium;
+    z-index: 1;
+}
+
+.card2{
+    border: 1px rgb(21, 255, 0) solid;
+    height: 50vh;
+    width: 25vw;
+    transition: 2s all;
+}  
+.card2:hover{
+    width: 40vw;
+    height: 65vh;
+    animation: type 2s forwards;
+    animation-iteration-count: 1;
+}
+
+.card2:hover .cimg{
+    width:40vw ;
+}
+.card2:hover .tbox{
+    width: 40vw;
+    height: 15vh;
+} 
+
+#img{
+    height: 70vh;
+    width: 90vw;
+    border: 1px orangered solid;
+    position: relative;
+    top:5px;
+    z-index: 5;
+}
+img{
+    height: 70vh;
+    width: 90vw;
+}
+#para{
+    background-color: orangered;
+    height: 15vh;
+    width: 90vw;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+.lbody{
+    animation: intro 5s;
+
+}
+.lpg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+#load{
+    color: orangered;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:5vh;
+    border: 1px orangered solid;
+    background-color:black;
+    height:85vh;
+    width: 95vw;
+    z-index: 7;
+    animation-name: intro;
+    animation-duration: 5s;
+}
+@keyframes intro{
+    0%{background-color: azure;border-color: azure; color: azure;}
+    100%{background-color: black; border-color: orangered;color: orangered;}
+    
+}
+.word{
+    font-size: 18vw;
+    position: relative;
+    font-family: "Orbitron",sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    width: 60vw;
+   
+    
+}
+#Go{
+    height: 12vh;
+    width: 4vw;
+}
+   
+    
+.go{
+    color: azure;
+    font-size: 4vw;
+    z-index: 2;
+    position: relative;
+    top: -100px;
+    animation: blink 5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    
+
+}
+.gal{
+    animation-name: blink;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: orangered;
+    font-size: 2vw;
+}
+@keyframes blink{
+    0%{color: black;}
+    50%{color: orangered;}
+    100%{color:black;}
+}
+.wheel{
+    z-index: 5;
+    position: relative;
+    top: -37vh;
+    left: -100vw;
+    height:28vh;
+    width: 15vw;
+    border: 2px rgb(55, 55, 55) solid;
+    border-radius: 50%;
+    background-image:url(DSCI2748.webp) ;
+    background-size:25vw ;
+    background-position: center;
+    animation-name: drive;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes drive{
+    
+    25%{translate: 91vw 0vh;
+    rotate: 100deg;}
+    90%{translate: 92vw 0vh;
+    rotate: 100000deg;}
+    96%{
+        translate: 300vw 0vh;
+        rotate: 1000deg;
+    }
+}
+
+   
+
+
